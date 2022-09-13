@@ -9,6 +9,9 @@
 <style>
 body {
   background: linear-gradient(180deg, #171b28 0%, #141e39 49%, #401766 100%);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;

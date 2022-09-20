@@ -1,9 +1,9 @@
 <template>
   <div>
-    <img :src="icon" class="icon" />
+    <img :src="icon" class="icon"/>
     <input
-      :placeholder="placeholder"
-      :style="{ paddingLeft: icon ? '40px' : '20px' }"
+        :placeholder="placeholder"
+        :style="{ paddingLeft: icon ? '40px' : '20px' }"
     />
   </div>
 </template>
@@ -24,7 +24,9 @@ input {
   background: #2b3246;
   border-radius: 8px;
   color: #f0f0f0;
+  border-style: none;
 }
+
 ::placeholder {
   color: #f0f0f0;
   opacity: 1; /* Firefox */
@@ -32,5 +34,9 @@ input {
 
 * {
   font-size: 16px;
+}
+
+input:focus {
+  outline:none;
 }
 </style>

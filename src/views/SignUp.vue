@@ -2,9 +2,9 @@
   <div>
     <h1>SignUp Page</h1>
     <TextInput placeholder="name" class="input"></TextInput>
-    <TextInput class="last name"></TextInput>
-    <TextInput class="email"></TextInput>
-    <TextInput class="password"></TextInput>
+    <TextInput placeholder="last name" class="input"></TextInput>
+    <TextInput placeholder="email" class="input"></TextInput>
+    <TextInput placeholder="password" class="input"></TextInput>
   </div>
 
 </template>

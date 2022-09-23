@@ -2,7 +2,7 @@
   <div>
     <h1>SignUp Page</h1>
     <TextInput placeholder="name" class="input"></TextInput>
-    <TextInput class="input"></TextInput>
+    <TextInput class="last name"></TextInput>
     <TextInput class="input"></TextInput>
     <TextInput class="input"></TextInput>
   </div>

@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h1>Login Page</h1>
+    <h1>Login</h1>
     <TextInput placeholder="email"></TextInput>
     <TextInput placeholder="password" class="input"></TextInput>
   </div>

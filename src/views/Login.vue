@@ -1,8 +1,9 @@
 <template>
-  <h1>Login Page</h1>
-  <TextInput></TextInput>
-  <TextInput class="input"></TextInput>
-
+  <div>
+    <h1>Login Page</h1>
+    <TextInput></TextInput>
+    <TextInput class="input"></TextInput>
+  </div>
 </template>
 
 <script>
@@ -14,7 +15,7 @@ export default {
 </script>
 
 <style scoped>
-h1{
+h1 {
   color: #f0f0f0;
 }
 

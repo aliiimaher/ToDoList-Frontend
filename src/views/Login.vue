@@ -21,6 +21,9 @@ h1 {
 
 .container {
   text-align: center;
+  margin: auto;
+  /*width: 40%;*/
+  padding: 140px 0;
 }
 
 .input {

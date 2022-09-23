@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>SignUp Page</h1>
-    <TextInput class="input"></TextInput>
+    <TextInput placeholder="fff" class="input"></TextInput>
     <TextInput class="input"></TextInput>
     <TextInput class="input"></TextInput>
     <TextInput class="input"></TextInput>

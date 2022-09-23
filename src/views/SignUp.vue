@@ -4,7 +4,7 @@
     <TextInput placeholder="name" class="input"></TextInput>
     <TextInput class="last name"></TextInput>
     <TextInput class="email"></TextInput>
-    <TextInput class="input"></TextInput>
+    <TextInput class="password"></TextInput>
   </div>
 
 </template>

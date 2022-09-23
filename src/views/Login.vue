@@ -3,14 +3,16 @@
     <h1>Login</h1>
     <TextInput placeholder="email"></TextInput>
     <TextInput placeholder="password" class="input"></TextInput>
+    <Button name="Login"></Button>
   </div>
 </template>
 
 <script>
 import TextInput from "@/components/TextInput";
+import Button from "@/components/Button";
 
 export default {
-  components: {TextInput}
+  components: {Button, TextInput}
 }
 </script>
 
@@ -28,5 +30,9 @@ h1 {
 
 .input {
   margin-top: 20px;
+}
+
+Button {
+  width: 100%;
 }
 </style>

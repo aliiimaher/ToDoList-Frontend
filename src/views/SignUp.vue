@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <h1>SignUp Page</h1>
     <TextInput placeholder="name" class="input"></TextInput>
     <TextInput placeholder="last name" class="input"></TextInput>
@@ -20,6 +20,10 @@ export default {
 <style scoped>
 h1 {
   color: #f0f0f0;
+}
+
+.container {
+  text-align: center;
 }
 
 .input {

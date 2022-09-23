@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>Login Page</h1>
-    <TextInput></TextInput>
+    <TextInput placeholder="email"></TextInput>
     <TextInput class="input"></TextInput>
   </div>
 </template>

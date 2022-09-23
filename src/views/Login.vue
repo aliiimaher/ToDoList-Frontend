@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <h1>Login Page</h1>
     <TextInput placeholder="email"></TextInput>
     <TextInput placeholder="password" class="input"></TextInput>
@@ -17,6 +17,10 @@ export default {
 <style scoped>
 h1 {
   color: #f0f0f0;
+}
+
+.container {
+  text-align: center;
 }
 
 .input {

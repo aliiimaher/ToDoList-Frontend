@@ -5,12 +5,15 @@
     <TextInput placeholder="last name" class="input"></TextInput>
     <TextInput placeholder="email" class="input"></TextInput>
     <TextInput placeholder="password" class="input"></TextInput>
+    <Button n></Button>
+
   </div>
 
 </template>
 
 <script>
 import TextInput from "@/components/TextInput";
+import
 
 export default {
   components: {TextInput}

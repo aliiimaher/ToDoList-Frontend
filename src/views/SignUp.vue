@@ -1,10 +1,11 @@
 <template>
-  <h1>SignUp Page</h1>
-  <TextInput></TextInput>
-  <TextInput></TextInput>
-  <TextInput></TextInput>
-  <TextInput></TextInput>
-
+  <div>
+    <h1>SignUp Page</h1>
+    <TextInput class="input"></TextInput>
+    <TextInput class="input"></TextInput>
+    <TextInput class="input"></TextInput>
+    <TextInput class="input"></TextInput>
+  </div>
 
 </template>
 
@@ -16,4 +17,12 @@ export default {
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+h1 {
+  color: #f0f0f0;
+}
+
+.input {
+  margin-top: 20px;
+}
+</style>

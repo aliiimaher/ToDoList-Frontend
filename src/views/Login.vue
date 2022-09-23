@@ -2,7 +2,7 @@
   <div>
     <h1>Login Page</h1>
     <TextInput placeholder="email"></TextInput>
-    <TextInput class="input"></TextInput>
+    <TextInput placeholder="password" class="input"></TextInput>
   </div>
 </template>
 

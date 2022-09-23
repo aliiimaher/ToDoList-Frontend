@@ -1,5 +1,5 @@
 <template>
-    this is login page
+    <h1>KIRIIRIIRI</h1>
 </template>
 
 <script>

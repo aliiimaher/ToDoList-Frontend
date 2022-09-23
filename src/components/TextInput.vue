@@ -4,6 +4,7 @@
     <input
         :placeholder="placeholder"
         :style="{ paddingLeft: icon ? '40px' : '20px' }"
+        :type="type"
     />
   </div>
 </template>
@@ -13,6 +14,7 @@ export default {
   props: {
     placeholder: {},
     icon: {},
+    type:{},
   },
 };
 </script>

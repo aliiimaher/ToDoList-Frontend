@@ -2,7 +2,7 @@
   <div class="container">
     <h1>Login</h1>
     <TextInput placeholder="email"></TextInput>
-    <TextInput placeholder="password" class="input"></TextInput>
+    <TextInput placeholder="password" type="password" class="input"></TextInput>
     <Button name="Login" class="btn"></Button>
   </div>
 </template>

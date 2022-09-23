@@ -5,7 +5,7 @@
     <TextInput placeholder="last name" class="input"></TextInput>
     <TextInput placeholder="email" class="input"></TextInput>
     <TextInput placeholder="password" class="input"></TextInput>
-    <Button n></Button>
+    <Button name="Sing Up" class="btn"></Button>
 
   </div>
 
@@ -13,10 +13,10 @@
 
 <script>
 import TextInput from "@/components/TextInput";
-import
+import Button from "@/components/Button"
 
 export default {
-  components: {TextInput}
+  components: {Button, TextInput}
 }
 </script>
 
@@ -33,6 +33,10 @@ h1 {
 }
 
 .input {
+  margin-top: 20px;
+}
+
+.btn {
   margin-top: 20px;
 }
 </style>

@@ -29,7 +29,10 @@
 
     <div class="card3">
       <div>
-        <h1>Handle Your Works Better :)</h1>
+        <h1>
+          Handle Your Works Better :)
+        </h1>
+        <Button name="Let’s Go!"></Button>
       </div>
       <div>
         <img src="../assets/Handle.svg" alt="">

@@ -1,10 +1,10 @@
 <template>
   <div class="container">
     <h1>SignUp</h1>
-    <TextInput placeholder="name" class="input"></TextInput>
-    <TextInput placeholder="last name" class="input"></TextInput>
-    <TextInput placeholder="email" class="input"></TextInput>
+    <TextInput placeholder="user name" class="input"></TextInput>
     <TextInput placeholder="password" type="password" class="input"></TextInput>
+    <TextInput placeholder="email" class="input"></TextInput>
+
     <Button name="Sign Up" class="btn"></Button>
 
   </div>

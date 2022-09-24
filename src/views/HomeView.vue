@@ -6,7 +6,7 @@
         <h1>
           Schedule
           Your Life
-          <Button name></Button>
+          <Button name="j"></Button>
         </h1>
       </div>
       <div>
@@ -19,7 +19,8 @@
         <img src="../assets/Write.svg" alt="">
       </div>
       <div>
-        <h1>Write Your
+        <h1>
+          Write Your
           Tasks!
         </h1>
       </div>
@@ -36,10 +37,12 @@
 </template>
 
 <script>
-import Button from "../components/Button"
+// import Button from "../components/Button"
+import Button from "@/components/Button";
+
 export default {
   name: "HomeView",
-  components: {},
+  components: {Button},
 };
 </script>
 

@@ -6,7 +6,7 @@
       <TextInput placeholder="password" type="password" class="input"></TextInput>
       <Button name="Login" class="btn"></Button>
     </div>
-    <div>
+    <div class="illustration">
       <img src="../assets/Illustration-login.svg" alt="">
     </div>
   </div>
@@ -27,10 +27,19 @@ h1 {
 }
 
 .container {
+  display: flex;
   text-align: center;
   margin: auto;
   /*width: 40%;*/
-  padding: 140px 0;
+  padding: 220px 0;
+}
+
+.illustration{
+  padding-left: 170px;
+}
+
+.form{
+  padding-left: 230px;
 }
 
 .input {

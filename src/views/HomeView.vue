@@ -76,5 +76,9 @@ router-link {
   display: flex;
 }
 
+.card3{
+  display: flex;
+}
+
 </style>
 

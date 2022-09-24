@@ -7,7 +7,7 @@
 <script>
 export default {
   props: {
-    name: "",
+    name: {},
   },
 };
 </script>

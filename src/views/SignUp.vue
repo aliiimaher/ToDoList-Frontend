@@ -1,12 +1,17 @@
 <template>
+
+
   <div class="container">
-    <h1>SignUp</h1>
-    <TextInput placeholder="user name" class="input"></TextInput>
-    <TextInput placeholder="password" type="password" class="input"></TextInput>
-    <TextInput placeholder="email" class="input"></TextInput>
-
-    <Button name="Sign Up" class="btn"></Button>
-
+    <div>
+      <img src="../assets/Illustration-signup.svg" alt="">
+    </div>
+    <div class="form">
+      <h1>SignUp</h1>
+      <TextInput placeholder="user name" class="input"></TextInput>
+      <TextInput placeholder="password" type="password" class="input"></TextInput>
+      <TextInput placeholder="email" class="input"></TextInput>
+      <Button name="Sign Up" class="btn"></Button>
+    </div>
   </div>
 
 </template>
@@ -26,6 +31,7 @@ h1 {
 }
 
 .container {
+  display: flex;
   text-align: center;
   margin: auto;
   /*width: 40%;*/

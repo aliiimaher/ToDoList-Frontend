@@ -25,8 +25,6 @@
         <Button name="Sign-Up Now"></Button>
       </div>
     </div>
-
-
     <div class="card3">
       <div>
         <h1>
@@ -37,11 +35,16 @@
       <div>
         <img src="../assets/Handle.svg" alt="">
       </div>
-
     </div>
+    <div class="card4">
+      <div>
+        <img src="../assets/Teamwork.svg" alt="">
+      </div>
 
+      <div>
 
-    <div class="card4"></div>
+      </div>
+    </div>
 
 
   </div>

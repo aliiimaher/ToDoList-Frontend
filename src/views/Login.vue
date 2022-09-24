@@ -1,9 +1,14 @@
 <template>
   <div class="container">
-    <h1>Login</h1>
-    <TextInput placeholder="email"></TextInput>
-    <TextInput placeholder="password" type="password" class="input"></TextInput>
-    <Button name="Login" class="btn"></Button>
+    <div class="form">
+      <h1>Login</h1>
+      <TextInput placeholder="email"></TextInput>
+      <TextInput placeholder="password" type="password" class="input"></TextInput>
+      <Button name="Login" class="btn"></Button>
+    </div>
+    <div>
+      <img src="../assets/Illustration-login.svg" alt="">
+    </div>
   </div>
 </template>
 

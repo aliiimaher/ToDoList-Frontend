@@ -6,7 +6,7 @@
         <h1>
           Schedule
           Your Life
-          <Button name="j"></Button>
+          <Button name="Start Now"></Button>
         </h1>
       </div>
       <div>
@@ -23,6 +23,7 @@
           Write Your
           Tasks!
         </h1>
+        <Button name="Sign-Up Now"></Button>
       </div>
     </div>
 
@@ -47,6 +48,10 @@ export default {
 </script>
 
 <style scoped>
+
+.container{
+  /*text-align: center;*/
+}
 
 * {
   color: #f0f0f0;

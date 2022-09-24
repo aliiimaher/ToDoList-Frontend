@@ -40,9 +40,11 @@
       <div>
         <img src="../assets/Teamwork.svg" alt="">
       </div>
-
       <div>
-
+        <h1>
+          Team Work
+        </h1>
+        <Button name="Get Started"></Button>
       </div>
     </div>
 
@@ -71,20 +73,18 @@ export default {
 }
 
 router-link {
-
 }
-
 .card1 {
   display: flex;
 }
-
 .card2 {
   display: flex;
 }
-
-.card3{
+.card3 {
   display: flex;
 }
-
+.card4{
+  display: flex;
+}
 </style>
 

@@ -13,7 +13,6 @@
         <img src="../assets/Schedule.svg" alt="">
       </div>
     </div>
-
     <div class="card2">
       <div>
         <img src="../assets/Write.svg" alt="">
@@ -28,7 +27,15 @@
     </div>
 
 
-    <div class="card3"></div>
+    <div class="card3">
+      <div>
+        <h1>Handle Your Works Better :)</h1>
+      </div>
+      <div>
+        <img src="../assets/Handle.svg" alt="">
+      </div>
+
+    </div>
 
 
     <div class="card4"></div>
@@ -49,7 +56,7 @@ export default {
 
 <style scoped>
 
-.container{
+.container {
   /*text-align: center;*/
 }
 

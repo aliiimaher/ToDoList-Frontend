@@ -20,5 +20,7 @@ button {
   padding: 10px 128px;
   font-family: sans-serif;
   color: #f0f0f0;
+  /*it is hardcoded and wrong change it as soon as possible*/
+  width: 340px;
 }
 </style>

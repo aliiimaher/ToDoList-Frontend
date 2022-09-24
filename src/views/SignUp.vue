@@ -1,15 +1,19 @@
 <template>
   <div class="container">
-    <h1>Login</h1>
-    <TextInput placeholder="email"></TextInput>
+    <h1>SignUp</h1>
+    <TextInput placeholder="name" class="input"></TextInput>
+    <TextInput placeholder="last name" class="input"></TextInput>
+    <TextInput placeholder="email" class="input"></TextInput>
     <TextInput placeholder="password" type="password" class="input"></TextInput>
-    <Button name="Login" class="btn"></Button>
+    <Button name="Sign Up" class="btn"></Button>
+
   </div>
+
 </template>
 
 <script>
 import TextInput from "@/components/TextInput";
-import Button from "@/components/Button";
+import Button from "@/components/Button"
 
 export default {
   components: {Button, TextInput}
@@ -33,7 +37,6 @@ h1 {
 }
 
 .btn {
-  width: 100%;
   margin-top: 20px;
 }
 </style>

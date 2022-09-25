@@ -22,10 +22,11 @@
           Write Your
           Tasks!
         </h1>
-        <Button name="Sign-Up Now"></Button>
+        <Button name="Sign-Up Now" @click="$router.push('/signup')"></Button>
       </div>
     </div>
-    <div class="card3">
+    <div class=" card3
+        ">
       <div>
         <h1>
           Handle Your Works Better :)

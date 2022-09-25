@@ -6,7 +6,7 @@
         <h1>
           Schedule
           Your Life
-          <Button name="Start Now"></Button>
+          <Button name="Start Now" @click="$router.push('/signup')"></Button>
         </h1>
       </div>
       <div>

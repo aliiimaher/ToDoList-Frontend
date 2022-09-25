@@ -31,7 +31,7 @@
         <h1>
           Handle Your Works Better :)
         </h1>
-        <Button name="Let’s Go!"></Button>
+        <Button name="Let’s Go!" @click="$router.push('/signup')"></Button>
       </div>
       <div>
         <img src="../assets/Handle.svg" alt="">

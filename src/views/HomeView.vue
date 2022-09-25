@@ -91,7 +91,7 @@ router-link {
   display: flex;
 }
 
-.card1, .card2, .card3, .card4 {
+.card2, .card3, .card4 {
   margin-top: 240px;
 }
 

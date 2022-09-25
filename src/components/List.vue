@@ -26,6 +26,7 @@ export default {
   border-radius: 8px;
   width: 70%;
   display: flex;
+  justify-content: space-between;
 }
 
 * {
@@ -40,6 +41,8 @@ h5 {
 }
 
 .icon{
-  justify-content: flex-end;
+  /*margin-right: auto;*/
+  padding-top: 10px;
+  padding-right: 12px;
 }
 </style>

@@ -1,11 +1,14 @@
 <template>
   <div>
-    <List title="kir" />
+    <div class="container">
+      <List title="kir"/>
+    </div>
   </div>
 </template>
 
 <script>
 import List from "@/components/List.vue";
+
 export default {
   name: "Lists",
   components: {List},
@@ -15,4 +18,8 @@ export default {
 
 <style scoped>
 
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
 </style>

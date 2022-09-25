@@ -22,6 +22,8 @@ export default {
 .container {
   background-color: #2B3246;
   height: 40px;
+  border-radius: 8px;
+  width: 70%;
 }
 
 *{
@@ -31,5 +33,6 @@ export default {
 h5{
   font-size: 14px;
   padding-left: 8px;
+  padding-top: 13px;
 }
 </style>

@@ -19,12 +19,17 @@ export default {
 </script>
 
 <style scoped>
-
 .container {
   background-color: #2B3246;
+  height: 40px;
 }
 
 *{
   color: #f0f0f0;
+}
+
+h5{
+  font-size: 14px;
+  padding-left: 8px;
 }
 </style>

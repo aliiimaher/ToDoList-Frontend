@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="main-container">
     <div class="container">
 
       <div v-for="(item, index) in lists" :key="index">
@@ -33,5 +33,9 @@ export default {
 .container {
   width: 80%;
   margin: 0 auto;
+}
+
+.main-container {
+  margin-top: 120px;
 }
 </style>

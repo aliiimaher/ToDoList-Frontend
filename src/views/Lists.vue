@@ -1,7 +1,11 @@
 <template>
   <div>
     <div class="container">
-      <List title="kir"/>
+
+      <div v-for="(item, index) in lists" :key="index">
+        <List :title="lists[index]"/>
+        <br/>
+      </div>
     </div>
   </div>
 </template>
@@ -12,6 +16,14 @@ import List from "@/components/List.vue";
 export default {
   name: "Lists",
   components: {List},
+  data() {
+    return {
+      lists: [
+        "list1", "list2", "list3", "list4", "list5"
+      ]
+    }
+  }
+
 }
 
 </script>

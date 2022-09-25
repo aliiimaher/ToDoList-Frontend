@@ -74,17 +74,26 @@ export default {
 
 router-link {
 }
+
 .card1 {
   display: flex;
 }
+
 .card2 {
   display: flex;
 }
+
 .card3 {
   display: flex;
 }
-.card4{
+
+.card4 {
   display: flex;
 }
+
+.card1, .card2, .card3, .card4 {
+  margin-top: 240px;
+}
+
 </style>
 

@@ -45,7 +45,7 @@
         <h1>
           Team Work
         </h1>
-        <Button name="Get Started"></Button>
+        <Button name="Get Started" @click="$router.push('/signup')"></Button>
       </div>
     </div>
 

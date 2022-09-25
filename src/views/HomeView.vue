@@ -6,7 +6,7 @@
         <h1>
           Schedule
           Your Life
-          <Button name="Start Now"></Button>
+          <Button name="Start Now" @click="$router.push('/signup')"></Button>
         </h1>
       </div>
       <div>
@@ -22,15 +22,16 @@
           Write Your
           Tasks!
         </h1>
-        <Button name="Sign-Up Now"></Button>
+        <Button name="Sign-Up Now" @click="$router.push('/signup')"></Button>
       </div>
     </div>
-    <div class="card3">
+    <div class=" card3
+        ">
       <div>
         <h1>
           Handle Your Works Better :)
         </h1>
-        <Button name="Let’s Go!"></Button>
+        <Button name="Let’s Go!" @click="$router.push('/signup')"></Button>
       </div>
       <div>
         <img src="../assets/Handle.svg" alt="">
@@ -44,7 +45,7 @@
         <h1>
           Team Work
         </h1>
-        <Button name="Get Started"></Button>
+        <Button name="Get Started" @click="$router.push('/signup')"></Button>
       </div>
     </div>
 

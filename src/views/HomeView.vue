@@ -77,6 +77,7 @@ router-link {
 
 .card1 {
   display: flex;
+  margin-top: 160px;
 }
 
 .card2 {

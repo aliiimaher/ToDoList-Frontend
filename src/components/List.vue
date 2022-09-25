@@ -4,7 +4,6 @@
       <h5>{{ title }}</h5>
     </div>
     <div>
-
     </div>
   </div>
 </template>
@@ -21,4 +20,11 @@ export default {
 
 <style scoped>
 
+.container {
+  background-color: #2B3246;
+}
+
+*{
+  color: #f0f0f0;
+}
 </style>

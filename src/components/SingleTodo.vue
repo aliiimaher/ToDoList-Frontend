@@ -1,9 +1,9 @@
 <template>
   <div class="container">
     <div>
-      <input type="checkbox" value="value">
+      <input type="checkbox">
+      <label>{{ title }}</label>
     </div>
-    <div>
   </div>
 </template>
 
@@ -11,11 +11,13 @@
 export default {
   name: "SingleTodo",
   props: {
-    value: {}
+    title: {}
   }
 }
 </script>
 
 <style scoped>
-
+* {
+  color: #f0f0f0;
+}
 </style>

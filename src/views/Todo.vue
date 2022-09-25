@@ -1,16 +1,25 @@
 <template>
   <div class="main-container">
     <div class="container">
-      <SingleTodo value="checkbox1"></SingleTodo>
+      <div v-for="(item, index) in todos" :key="index">
+        <SingleTodo :title="todos[index]"/>
+        <br/>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 import SingleTodo from "@/components/SingleTodo";
+
 export default {
   name: "Todo",
-  components: {SingleTodo}
+  components: {SingleTodo},
+  data() {
+    return {
+      todos: ["task1", "task2", "task3", "task4", "task5", "task6"]
+    }
+  }
 }
 </script>
 

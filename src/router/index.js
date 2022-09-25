@@ -3,6 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import LoginView from '../views/Login.vue'
 import SignUpView from '../views/SignUp.vue'
 import Lists from "@/views/Lists";
+import Todo from "@/views/Todo";
 
 const routes = [
     {
@@ -24,6 +25,11 @@ const routes = [
         path: '/lists',
         name: 'lists',
         component: Lists
+    },
+    {
+        path: '/todos',
+        name: 'todos',
+        component: Todo
     }
 ]
 

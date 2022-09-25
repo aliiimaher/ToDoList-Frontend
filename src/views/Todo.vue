@@ -28,4 +28,12 @@ export default {
   color: #f0f0f0;
 }
 
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
+.main-container {
+  margin-top: 120px;
+}
+
 </style>

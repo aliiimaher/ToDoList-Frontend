@@ -1,9 +1,9 @@
 <template>
   <div class="container">
-    <div>
-      <input type="checkbox">
+
+      <input type="checkbox" class="check">
       <label>{{ title }}</label>
-    </div>
+
   </div>
 </template>
 
@@ -20,4 +20,23 @@ export default {
 * {
   color: #f0f0f0;
 }
+.container {
+  background-color: #2B3246;
+  padding-top: 9px;
+  height: 30px;
+  border-radius: 8px;
+  width: 70%;
+}
+label {
+  font-size: 14px;
+  padding-left: 8px;
+  /*padding-top: 70px;*/
+  margin: 0;
+}
+
+
+.check {
+
+}
+
 </style>

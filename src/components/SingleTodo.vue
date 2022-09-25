@@ -1,17 +1,18 @@
 <template>
   <div class="container">
     <div>
-      <h5>{{ title }}</h5>
+      <input type="checkbox" value="value">
     </div>
     <div>
-      <img src="../assets/trash.svg" class="icon" alt="">
-    </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "SingleTodo"
+  name: "SingleTodo",
+  props: {
+    value: {}
+  }
 }
 </script>
 

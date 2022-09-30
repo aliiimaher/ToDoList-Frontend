@@ -79,20 +79,26 @@ router-link {
 .card1 {
   display: flex;
   margin-top: 160px;
-}
+  flex-direction: column-reverse;
 
-.card2 {
-  display: flex;
 }
+@media screen and (min-width: 1000px) {
+  .card1{
+    flex-direction: row;
+  }
 
-.card3 {
-  display: flex;
+  .card2 {
+    display: flex;
+  }
+
+  .card3 {
+    display: flex;
+  }
+
+  .card4 {
+    display: flex;
+  }
 }
-
-.card4 {
-  display: flex;
-}
-
 .card2, .card3, .card4 {
   margin-top: 240px;
 }

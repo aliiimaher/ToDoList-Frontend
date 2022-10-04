@@ -24,5 +24,6 @@ button {
   /*it is hardcoded and wrong change it as soon as possible*/
   width: 320px;
   height: 40px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.4));
 }
 </style>

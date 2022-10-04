@@ -17,6 +17,7 @@ button {
   background: linear-gradient(94.85deg, #246bfd 2.76%, #891bd3 99.01%);
   border-radius: 8px;
   border: none;
+  text-align: center;
   /* padding: 10px 128px; */
   font-family: sans-serif;
   font-size: 16px;

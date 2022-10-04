@@ -22,7 +22,9 @@
         class="input"
       ></TextInput>
       <Button name="Sign Up" class="btn"></Button>
-      <div class="already-register">Already has an account? Log In</div>
+      <a href="/login">
+        <div class="already-register">Already has an account? Log In</div>
+      </a>
     </div>
   </div>
 </template>

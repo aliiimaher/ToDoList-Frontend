@@ -22,6 +22,9 @@
         class="input"
       ></TextInput>
       <Button name="Sign Up" class="btn"></Button>
+      <a href="/login">
+        <div class="already-register">Already has an account? Log In</div>
+      </a>
     </div>
   </div>
 </template>
@@ -38,6 +41,15 @@ export default {
 <style scoped>
 h1 {
   color: #f0f0f0;
+}
+
+.already-register {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #f0f0f0;
+  margin: 16px 0px;
 }
 
 .container {

@@ -14,7 +14,9 @@
       ></TextInput>
       <div class="forget-password">Forget Password?</div>
       <Button name="Login" class="btn"></Button>
-      <div class="new-user">New User? Sign Up</div>
+      <a href="/signup">
+        <div class="new-user">New User? Sign Up</div>
+      </a>
     </div>
     <div class="illustration">
       <img src="../assets/Illustration-login.svg" alt="" />

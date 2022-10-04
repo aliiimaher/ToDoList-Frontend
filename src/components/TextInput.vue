@@ -1,4 +1,85 @@
 <template>
+  <div class="whole-input">
+    <div class="icon-place">
+      <img :src="icon" class="icon" />
+    </div>
+    <input :placeholder="placeholder" class="text-place" />
+    <!-- :style="{ paddingLeft: icon ? '40px' : '20px' }" -->
+  </div>
+</template>
+
+<script>
+export default {
+  props: {
+    placeholder: {},
+    icon: {},
+  },
+};
+</script>
+
+<style scoped>
+.text-place {
+  background: none;
+  color: #f0f0f0;
+}
+
+.icon-place {
+  display: flex;
+  height: 26.66px;
+  width: 24px;
+  padding: 8px;
+  margin: 0 0;
+}
+
+icon {
+  /* position: absolute; */
+  display: flex;
+  height: 26.66px !important;
+  width: 24px !important;
+  margin: 0;
+  /* background: #f0f0f0; */
+}
+
+input {
+  display: flex;
+  width: 272px;
+  height: 40px;
+  border-radius: 8px;
+  /* color: #f0f0f0; */
+  border-style: none;
+}
+
+.whole-input {
+  display: flex;
+  width: 320px;
+  height: 40px;
+  background: #2b3246;
+  border-radius: 8px;
+  /* padding: 8px 8px; */
+  /* color: #f0f0f0; */
+  margin-left: auto;
+  margin-right: auto;
+  border-style: none;
+  /* align-items: center;
+  justify-content: center; */
+}
+
+::placeholder {
+  color: #f0f0f0;
+  opacity: 1; /* Firefox */
+}
+
+* {
+  font-size: 16px;
+  align-content: center;
+}
+
+input:focus {
+  outline: none;
+}
+</style>
+
+<!-- <template>
   <div>
     <img :src="icon" class="icon"/>
     <input
@@ -41,4 +122,4 @@ input {
 input:focus {
   outline:none;
 }
-</style>
+</style> -->

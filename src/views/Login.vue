@@ -8,7 +8,7 @@
       ></TextInput>
       <TextInput
         placeholder="Password"
-        :icon="require('../')"
+        :icon="require('../assets/icons/Subtract.svg')"
         type="password"
         class="input"
       ></TextInput>

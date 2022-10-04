@@ -12,7 +12,9 @@
         type="password"
         class="input"
       ></TextInput>
+      <div class="forget-password">Forget Password?</div>
       <Button name="Login" class="btn"></Button>
+      <div class="new-user">New User? Sign Up</div>
     </div>
     <div class="illustration">
       <img src="../assets/Illustration-login.svg" alt="" />
@@ -32,6 +34,24 @@ export default {
 <style scoped>
 h1 {
   color: #f0f0f0;
+}
+
+.new-user {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #f0f0f0;
+  margin: 16px 0px;
+}
+
+.forget-password {
+  text-align: right;
+  font-family: sans-serif;
+  font-size: 12px;
+  color: #f0f0f0;
+  margin: 16px 8px;
+  font-weight: 400;
 }
 
 .container {
@@ -56,6 +76,6 @@ h1 {
 
 .btn {
   width: 100%;
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
 </style>

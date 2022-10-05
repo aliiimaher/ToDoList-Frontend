@@ -5,6 +5,7 @@ import SignUpView from "../views/SignUp.vue";
 import Lists from "@/views/Lists";
 import Todo from "@/views/Todo";
 import NotFoundView from "../views/NotFound.vue";
+import ForgetPasswordView from "../views/ForgetPass.vue";
 
 const routes = [
   {
@@ -37,11 +38,11 @@ const routes = [
     name: "NotFound",
     component: NotFoundView,
   },
-//   {
-//     path: "/:pathMatch(.*)*",
-//     name: "NotFound",
-//     component: NotFound,
-//   },
+  {
+    path: "/forgetpassword",
+    name: "ForgetPassword",
+    component: ForgetPasswordView,
+  },
 ];
 
 const router = createRouter({

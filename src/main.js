@@ -5,14 +5,18 @@ import store from './store'
 
 // primevue part
 import PrimeVue from 'primevue/config';
-import "primevue/resources/themes/saga-blue/theme.css"          //theme
-import "primevue/resources/primevue.min.css"                    //core css
-import "primeicons/primeicons.css"                              //icons
-import Menubar from 'primevue/menubar';                         //menubar
+import '/node_modules/primeflex/primeflex.css'                  // PrimeFlex
+import "primevue/resources/themes/saga-blue/theme.css"          // theme
+import "primevue/resources/primevue.min.css"                    // core css
+import "primeicons/primeicons.css"                              // icons
+
+import Menubar from 'primevue/menubar';                         // menubar
+import Button from 'primevue/button'                            // import Button component
 
 const app = createApp(App)
 
 app.use(PrimeVue)
 app.component('Menubar', Menubar);
+app.component('ButtonVue', Button);
 
 app.use(store).use(router).mount('#app')

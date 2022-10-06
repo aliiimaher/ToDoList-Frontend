@@ -1,4 +1,5 @@
 <template>
+  <ButtonVue label="submit" />
   <navbar />
   <router-view/>
 </template>

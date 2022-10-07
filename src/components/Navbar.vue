@@ -137,7 +137,7 @@ export default {
 }
 /* try end */
 .p-menubar {
-  /* background-color: #413e83; */
+  background-color: #413e83;
   color: blue;
   border: none;
   padding: 0 0;

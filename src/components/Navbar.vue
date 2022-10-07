@@ -107,7 +107,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .menubar-container {
   text-align: center;
   align-items: center;

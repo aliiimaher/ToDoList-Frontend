@@ -1,6 +1,6 @@
 <template>
   <div class="menubar-container">
-    <Menubar :model="items">
+    <Menubar :model="items" class="test">
       <template #start>
         <img
           alt="logo"
@@ -107,7 +107,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .menubar-container {
   text-align: center;
   align-items: center;
@@ -137,7 +137,7 @@ export default {
 }
 /* try end */
 .p-menubar {
-  /* background-color: #413e83; */
+  background-color: #413e83;
   color: blue;
   border: none;
   padding: 0 0;
@@ -145,5 +145,17 @@ export default {
   padding-left: 0;
   height: 80px;
   border-radius: 0;
+}
+
+.p-menubar .p-menuitem .p-menuitem-text {
+    color: red !important;
+}
+
+.p-menubar .p-menubar-root-list .p-menuitem .p-menuitem-link .p-menuitem-text {
+    color: red !important;
+}
+
+:root {
+    --text-color: red !important;
 }
 </style>

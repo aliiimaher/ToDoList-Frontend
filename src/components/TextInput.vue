@@ -27,8 +27,8 @@ export default {
   display: flex;
   height: 26.66px;
   width: 24px;
-  padding: 8px;
-  margin: 0 0;
+  margin: 8px;
+  /* margin: 0 0; */
 }
 
 icon {
@@ -38,6 +38,8 @@ icon {
   width: 24px !important;
   margin: 0;
   /* background: #f0f0f0; */
+  /* margin-right: 8px;
+  margin-left: 8px; */
 }
 
 input {
@@ -60,8 +62,8 @@ input {
   margin-left: auto;
   margin-right: auto;
   border-style: none;
-  /* align-items: center;
-  justify-content: center; */
+  align-items: center;
+  /* justify-content: center; */
 }
 
 ::placeholder {

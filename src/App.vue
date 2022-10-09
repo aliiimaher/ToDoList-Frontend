@@ -1,8 +1,6 @@
 <template>
   <Toolbar />
-  divide
-  <navbar />
-  divide
+  <!-- <navbar /> -->
   <router-view/>
 </template>
 

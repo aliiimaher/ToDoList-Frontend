@@ -1,15 +1,20 @@
 <template>
+  <Toolbar />
+  divide
   <navbar />
+  divide
   <router-view/>
 </template>
 
 <script>
-import Navbar from "./components/Navbar.vue"; 
+import Navbar from "./components/Navbar.vue";
+import Toolbar from "./components/Toolbar.vue"; 
 export default {
  name: "App",
  components: {
-  Navbar,
- },
+    Navbar,
+    Toolbar
+},
 }
 </script>
 

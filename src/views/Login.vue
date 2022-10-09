@@ -12,7 +12,9 @@
         type="password"
         class="input"
       ></TextInput>
-      <div class="forget-password">Forget Password?</div>
+      <div class="forget-password" onclick="location.href='/forgetpassword';"  >
+        Forget Password?
+      </div>
       <Button name="Login" class="btn"></Button>
       <a href="/signup">
         <div class="new-user">New User? Sign Up</div>
@@ -54,6 +56,7 @@ h1 {
   color: #f0f0f0;
   margin: 16px 8px;
   font-weight: 400;
+  cursor: pointer;
 }
 
 .container {

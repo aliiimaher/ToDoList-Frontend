@@ -8,6 +8,7 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "axios": "^1.1.2",
     "core-js": "^3.8.3",
     "primeflex": "^3.2.1",
     "primeicons": "^6.0.1",

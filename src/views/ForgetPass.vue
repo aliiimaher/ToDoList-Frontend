@@ -9,7 +9,7 @@
           class="input"
         >
         </TextInput>
-        <Button name="Submit"></Button>
+        <Button1 name="Submit"></Button1>
       </div>
       <div class="ill">
         <img src="../assets/ills/Ill-ForgetPass.svg" />
@@ -20,9 +20,9 @@
 
 <script>
 import TextInput from "@/components/TextInput";
-import Button from "@/components/Button";
+import Button1 from "@/components/Button1";
 export default {
-  components: { TextInput, Button },
+  components: { TextInput, Button1 },
 };
 </script>
 
@@ -36,16 +36,16 @@ export default {
 }
 
 .function {
-    margin-right: 160px;
+  margin-right: 160px;
 }
 
 .input {
-    margin-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .ill {
-    display: block;
-    margin-left: 0;
+  display: block;
+  margin-left: 0;
 }
 
 * {

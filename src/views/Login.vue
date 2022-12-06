@@ -12,10 +12,10 @@
         type="password"
         class="input"
       ></TextInput>
-      <div class="forget-password" onclick="location.href='/forgetpassword';"  >
+      <div class="forget-password" onclick="location.href='/forgetpassword';">
         Forget Password?
       </div>
-      <Button name="Login" class="btn"></Button>
+      <Button1 name="Login" class="btn"></Button1>
       <a href="/signup">
         <div class="new-user">New User? Sign Up</div>
       </a>
@@ -28,10 +28,10 @@
 
 <script>
 import TextInput from "@/components/TextInput";
-import Button from "@/components/Button";
+import Button1 from "@/components/Button1";
 
 export default {
-  components: { Button, TextInput },
+  components: { Button1, TextInput },
 };
 </script>
 

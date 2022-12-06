@@ -21,7 +21,7 @@
         :icon="require('../assets/icons/Email.svg')"
         class="input"
       ></TextInput>
-      <Button name="Sign Up" class="btn"></Button>
+      <Button1 name="Sign Up" class="btn"></Button1>
       <a href="/login">
         <div class="already-register">Already has an account? Log In</div>
       </a>
@@ -31,10 +31,10 @@
 
 <script>
 import TextInput from "@/components/TextInput";
-import Button from "@/components/Button";
+import Button1 from "@/components/Button1";
 
 export default {
-  components: { Button, TextInput },
+  components: { Button1, TextInput },
 };
 </script>
 

@@ -3,10 +3,12 @@
     <div class="form">
       <h1>Login</h1>
       <TextInput
+        v-model="username"
         placeholder="Username"
         :icon="require('../assets/icons/person.svg')"
       ></TextInput>
       <TextInput
+        v-model="password"
         placeholder="Password"
         :icon="require('../assets/icons/Subtract.svg')"
         type="password"
@@ -15,7 +17,7 @@
       <div class="forget-password" onclick="location.href='/forgetpassword';">
         Forget Password?
       </div>
-      <Button1 name="Login" class="btn"></Button1>
+      <Button1 @click="login" name="Login" class="btn"></Button1>
       <a href="/signup">
         <div class="new-user">New User? Sign Up</div>
       </a>
@@ -33,6 +35,34 @@ import axios from "axios";
 
 export default {
   components: { Button1, TextInput },
+
+  data() {
+    return {
+      username: {},
+      password: {},
+    };
+  },
+
+  methods: {
+    login() {
+      const formData = {
+        username: this.username,
+        password: this.password,
+      };
+      console.log(formData);
+      axios
+        .post("/login/", formData)
+        .then((response) => {
+          console.log(response);
+          this.$store.commit("setAccess", response.data.access);
+          this.$router.push("/");
+          console.log(this.$store.state.access);
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    },
+  },
 };
 </script>
 

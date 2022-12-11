@@ -1,19 +1,34 @@
 <template>
-  <div class="whole-input">
-    <div class="icon-place">
+  <!-- <div class="whole-input"> -->
+  <!-- <div class="icon-place">
       <img :src="icon" class="icon" />
-    </div>
-    <input :placeholder="placeholder" class="text-place" />
-    <!-- :style="{ paddingLeft: icon ? '40px' : '20px' }" -->
-  </div>
+    </div> -->
+  <input
+    class="whole-input text-place"
+    v-model="content"
+    @input="handleInput"
+    :placeholder="placeholder"
+  />
+  <!-- :style="{ paddingLeft: icon ? '40px' : '20px' }" -->
+  <!-- </div> -->
 </template>
 
 <script>
 export default {
   props: {
-    // modelValue: String,
     placeholder: {},
+    value: {},
     icon: {},
+  },
+  methods: {
+    handleInput(e) {
+      this.$emit("input", this.content);
+    },
+  },
+  data() {
+    return {
+      content: this.value,
+    };
   },
 };
 </script>

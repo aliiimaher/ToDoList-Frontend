@@ -29,6 +29,7 @@
 <script>
 import TextInput from "@/components/TextInput";
 import Button1 from "@/components/Button1";
+import axios from "axios";
 
 export default {
   components: { Button1, TextInput },

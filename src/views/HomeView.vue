@@ -1,42 +1,14 @@
 <template>
   <div class="container">
-    <div class="card1">
-      <div>
-        <h1>
-          Schedule Your Life
-          <Button1 name="Start Now" @click="$router.push('/signup')"></Button1>
-        </h1>
-      </div>
-      <div>
-        <img src="../assets/Schedule.svg" alt="" />
-      </div>
+    <div>
+      <router-link to="/signup">
+        <Button1 name="Sign Up" class="btn"></Button1>
+      </router-link>
     </div>
-    <div class="card2">
-      <div>
-        <img src="../assets/Write.svg" alt="" />
-      </div>
-      <div>
-        <h1>Write Your Tasks!</h1>
-        <Button1 name="Sign-Up Now" @click="$router.push('/signup')"></Button1>
-      </div>
-    </div>
-    <div class="card3">
-      <div>
-        <h1>Handle Your Works Better :)</h1>
-        <Button1 name="Let’s Go!" @click="$router.push('/signup')"></Button1>
-      </div>
-      <div>
-        <img src="../assets/Handle.svg" alt="" />
-      </div>
-    </div>
-    <div class="card4">
-      <div>
-        <img src="../assets/Teamwork.svg" alt="" />
-      </div>
-      <div>
-        <h1>Team Work</h1>
-        <Button1 name="Get Started" @click="$router.push('/signup')"></Button1>
-      </div>
+    <div>
+      <router-link to="/login">
+        <Button1 name="Login" class="btn"></Button1>
+      </router-link>
     </div>
   </div>
 </template>
@@ -48,19 +20,23 @@ import Button1 from "@/components/Button1";
 export default {
   name: "HomeView",
   components: { Button1 },
+  beforeCreate() {
+    if (this.$store.state.access) {
+      this.$router.push("/lists");
+    }
+  },
 };
 </script>
 
 <style scoped>
 .container {
-  /*text-align: center;*/
+  display: flex;
+  justify-content: space-between;
+  padding: 200px 160px;
 }
 
 * {
   color: #f0f0f0;
-}
-
-router-link {
 }
 
 .card1 {
@@ -79,6 +55,7 @@ router-link {
 
   .card3 {
     display: flex;
+    flex-direction: column-reverse;
   }
 
   .card4 {

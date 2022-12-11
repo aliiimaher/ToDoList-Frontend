@@ -4,7 +4,7 @@
       <h5>{{ title }}</h5>
     </div>
     <div>
-      <img src="../assets/trash.svg" class="icon" alt="">
+      <img src="../assets/trash.svg" class="icon" alt="" />
     </div>
   </div>
 </template>
@@ -15,13 +15,13 @@ export default {
 
   props: {
     title: {},
-  }
-}
+  },
+};
 </script>
 
 <style scoped>
 .container {
-  background-color: #2B3246;
+  background-color: #2b3246;
   height: 40px;
   border-radius: 8px;
   width: 70%;
@@ -40,7 +40,7 @@ h5 {
   margin: 0;
 }
 
-.icon{
+.icon {
   /*margin-right: auto;*/
   padding-top: 10px;
   padding-right: 12px;

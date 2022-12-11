@@ -1,17 +1,26 @@
 <template>
-  <!-- <navbar /> -->
-  <NavBar></NavBar>
-  <!-- <Menubar :model="items" /> -->
-
+  <Navbar1></Navbar1>
   <router-view />
 </template>
 
 <script>
-import NavBar from "./components/NavBar.vue";
+import axios from "axios";
+import Navbar1 from "./components/Navbar1.vue";
 
 export default {
   name: "App",
-  components: { NavBar },
+  components: { Navbar1 },
+  beforeCreate() {
+    this.$store.commit("initializeStore");
+
+    const access = this.$store.state.access;
+
+    if (access) {
+      axios.defaults.headers.common["Authorization"] = "JWT " + access;
+    } else {
+      axios.defaults.headers.common["Authorization"] = "";
+    }
+  },
 };
 </script>
 

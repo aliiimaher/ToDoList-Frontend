@@ -7,7 +7,7 @@
       <div class="form">
         <h1>SignUp</h1>
         <TextInput
-          v-model="this.username"
+          v-model="username"
           placeholder="Username"
           :icon="require('../assets/icons/person.svg')"
           class="input"
@@ -25,7 +25,7 @@
           :icon="require('../assets/icons/Email.svg')"
           class="input"
         ></TextInput>
-        <Button1 name="Sign Up" class="btn" @click="submitForm()"></Button1>
+        <Button1 name="Sign Up" class="btn" @click="submitForm"></Button1>
         <a href="/login">
           <div class="already-register">Already has an account? Log In</div>
         </a>
@@ -43,29 +43,26 @@ export default {
   components: { Button1, TextInput },
   data() {
     return {
-      username: "",
-      password: "",
-      email: "",
+      username: {},
+      password: {},
+      email: {},
     };
   },
   methods: {
     submitForm() {
       const formData = {
-        username: "ewerw",
-        password1: "jjj",
-        password2: "jss",
-        email: "werwer.mortazavian@gmail.com",
+        username: this.username,
+        password1: this.password,
+        password2: this.password,
+        email: this.email,
         full_name: "mehdi",
       };
       // console.log(formData);
+      // debugger;
+      console.log("KIRRRRRRRRRRRRRRRR");
+      console.log(formData);
       axios
-        .post("/signup/", {
-          username: "sfsfs",
-          password1: "coskesh",
-          password2: "coskesh",
-          email: "sfsfsfsf.mortazavian@gmail.com",
-          full_name: "sfsfsfssf",
-        })
+        .post("/signup/", formData)
         .then((response) => {
           console.log(response);
           this.$router.push("/");

@@ -54,10 +54,17 @@ export default {
         .post("/login/", formData)
         .then((response) => {
           console.log(response);
-          localStorage.setItem("access", response.data.access);
-          this.$store.commit("setAccess", response.data.access);
-          this.$router.push("/lists");
-          console.log(this.$store.state.access);
+          const access = response.data.access;
+
+          this.$store.commit("setAccess", access);
+          axios.defaults.headers.common["Authorization"] = access;
+          localStorage.setItem("access", access);
+          this.$router.push("/");
+
+          // localStorage.setItem("access", response.data.access);
+          // this.$store.commit("setAccess", response.data.access);
+          // this.$router.push("/lists");
+          // console.log(this.$store.state.access);
         })
         .catch((error) => {
           console.log(error);

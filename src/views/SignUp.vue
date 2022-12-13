@@ -59,13 +59,12 @@ export default {
       };
       // console.log(formData);
       // debugger;
-      console.log("KIRRRRRRRRRRRRRRRR");
       console.log(formData);
       axios
         .post("/signup/", formData)
         .then((response) => {
           console.log(response);
-          this.$router.push("/");
+          this.$router.push("/login");
         })
         .catch((error) => {
           console.log(error);

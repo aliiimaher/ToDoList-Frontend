@@ -25,7 +25,6 @@ export default {
   },
   beforeMount() {
     if (this.$store.state.access) {
-      console.log(this.items);
       this.items.push({
         label: "Quit",
         icon: "pi pi-fw pi-power-off",

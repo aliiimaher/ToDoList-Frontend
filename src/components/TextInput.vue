@@ -60,7 +60,8 @@ icon {
 
 input {
   display: flex;
-  width: 272px;
+  /* width: 272px; */
+  max-width: 272px;
   height: 40px;
   border-radius: 8px;
   /* color: #f0f0f0; */
@@ -69,7 +70,8 @@ input {
 
 .whole-input {
   display: flex;
-  width: 320px;
+  max-width: 272px;
+  width: 100%;
   height: 40px;
   background: #2b3246;
   border-radius: 8px;
@@ -133,11 +135,11 @@ input {
   opacity: 1; /* Firefox */
 }
 
-* {
+
   font-size: 16px;
 }
 
 input:focus {
   outline:none;
 }
-</style> -->
+</> -->

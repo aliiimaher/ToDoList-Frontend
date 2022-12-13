@@ -10,6 +10,7 @@ export default {
         {
           label: "Home",
           icon: "pi pi-home",
+          url: "/",
         },
         {
           label: "Events",
@@ -34,10 +35,14 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 .p-menubar {
   background: #413e83 !important;
   border: none !important;
+}
+
+.p-menuitem-text {
+  color: #000 !important;
 }
 
 .p-menubar-root-list {

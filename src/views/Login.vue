@@ -1,5 +1,8 @@
 <template>
   <div class="container">
+    <div class="illustration">
+      <img src="../assets/Illustration-login.svg" alt="" />
+    </div>
     <div class="form">
       <h1>Login</h1>
       <TextInput
@@ -21,9 +24,6 @@
       <a href="/signup">
         <div class="new-user">New User? Sign Up</div>
       </a>
-    </div>
-    <div class="illustration">
-      <img src="../assets/Illustration-login.svg" alt="" />
     </div>
   </div>
 </template>
@@ -92,27 +92,36 @@ h1 {
 }
 
 .container {
-  display: flex;
   text-align: center;
   margin: auto;
   /*width: 40%;*/
-  padding: 220px 0;
-}
-
-.illustration {
-  padding-left: 170px;
-}
-
-.form {
-  padding-left: 230px;
+  padding: 50px 0;
 }
 
 .input {
   margin-top: 20px;
 }
 
+.illustration {
+  overflow: hidden;
+}
+img {
+  width: 100%;
+}
 .btn {
   width: 100%;
   /* margin-top: 20px; */
+}
+@media screen and (min-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    gap: 50px;
+    padding: 220px 0;
+  }
+  .form {
+    width: 50%;
+  }
 }
 </style>

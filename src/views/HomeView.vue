@@ -11,6 +11,9 @@
       </router-link>
     </div>
   </div>
+  <div class="illustration">
+    <img src="@/assets/Illustration-signup.svg" alt="" />
+  </div>
 </template>
 
 <script>
@@ -52,6 +55,9 @@ export default {
 @media screen and (min-width: 600px) {
   .container {
     display: flex;
+  }
+  .illustration {
+    text-align: center;
   }
 }
 </style>

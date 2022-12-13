@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div @click="goTodos" class="container">
     <div>
       <h5>{{ title }}</h5>
     </div>
@@ -31,6 +31,9 @@ export default {
         .catch((error) => {
           console.log(error);
         });
+    },
+    goTodos() {
+      this.$router.push(`/todos/${this.itemId}`);
     },
   },
 };

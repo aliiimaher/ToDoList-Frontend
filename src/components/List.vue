@@ -4,27 +4,45 @@
       <h5>{{ title }}</h5>
     </div>
     <div>
-      <img src="../assets/trash.svg" class="icon" alt="" />
+      <img @click="deleteList" src="../assets/trash.svg" class="icon" alt="" />
     </div>
   </div>
 </template>
 
 <script>
+import axios from "axios";
+
 export default {
   name: "List",
 
   props: {
     title: {},
+    itemId: {},
+    deleteItem: {},
+  },
+  methods: {
+    deleteList() {
+      axios
+        .delete(`/list/${this.itemId}/`)
+        .then((response) => {
+          console.log(response);
+          this.deleteItem();
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    },
   },
 };
 </script>
 
 <style scoped>
 .container {
+  max-width: 272px;
   background-color: #2b3246;
   height: 40px;
   border-radius: 8px;
-  width: 70%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }

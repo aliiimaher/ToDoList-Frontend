@@ -2,12 +2,12 @@
   <div class="container">
     <div>
       <router-link to="/signup">
-        <Button1 name="Sign Up" class="btn"></Button1>
+        <Button1 name="Sign Up" class="btn router"></Button1>
       </router-link>
     </div>
     <div>
-      <router-link to="/login">
-        <Button1 name="Login" class="btn"></Button1>
+      <router-link class="router" to="/login">
+        <Button1 name="Login" class="btn router"></Button1>
       </router-link>
     </div>
   </div>
@@ -30,41 +30,28 @@ export default {
 
 <style scoped>
 .container {
-  display: flex;
-  justify-content: space-between;
-  padding: 200px 160px;
+  margin: auto;
+  padding-top: 90px;
+  justify-content: space-around;
+  gap: 30px;
 }
 
 * {
   color: #f0f0f0;
 }
-
+.router {
+  width: 180px;
+  margin: auto;
+  margin-bottom: 40px;
+}
 .card1 {
   display: flex;
   margin-top: 160px;
   flex-direction: column-reverse;
 }
-@media screen and (min-width: 1000px) {
-  .card1 {
-    flex-direction: row;
-  }
-
-  .card2 {
+@media screen and (min-width: 600px) {
+  .container {
     display: flex;
   }
-
-  .card3 {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-
-  .card4 {
-    display: flex;
-  }
-}
-.card2,
-.card3,
-.card4 {
-  margin-top: 240px;
 }
 </style>

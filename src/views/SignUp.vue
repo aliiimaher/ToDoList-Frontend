@@ -90,26 +90,39 @@ h1 {
 }
 
 .container {
-  display: flex;
+  /* display: flex; */
   text-align: center;
   margin: auto;
   /*width: 40%;*/
-  padding: 220px 0;
+  padding: 50px 0;
 }
-
-.illustration {
-  padding-left: 170px;
-}
-
 .form {
-  padding-left: 230px;
+  margin: auto !important;
 }
 
 .input {
   margin-top: 20px;
 }
 
+.illustration {
+  overflow: hidden;
+}
+img {
+  width: 100%;
+}
+
 .btn {
   margin-top: 20px;
+}
+@media screen and (min-width: 600px) {
+  .container {
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    padding: 220px 0;
+  }
+  form {
+    width: 50%;
+  }
 }
 </style>

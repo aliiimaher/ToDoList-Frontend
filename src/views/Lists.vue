@@ -2,7 +2,11 @@
   <div class="main-container">
     <div class="container">
       <div v-for="(item, index) in lists" :key="index">
-        <List :title="lists[index].name" />
+        <List
+          :deleteItem="() => deleteItem(index)"
+          :itemId="item.id"
+          :title="item.name"
+        />
         <br />
       </div>
     </div>
@@ -41,6 +45,12 @@ export default {
   methods: {
     addList() {
       this.$router.push("/add-list/");
+    },
+    deleteItem(item) {
+      this.lists = [
+        ...this.lists.slice(0, item),
+        ...this.lists.slice(item + 1),
+      ];
     },
   },
 };

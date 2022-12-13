@@ -16,7 +16,7 @@ export default {
     const access = this.$store.state.access;
 
     if (access) {
-      axios.defaults.headers.common["Authorization"] = "JWT " + access;
+      axios.defaults.headers.common["Authorization"] = "Bearer " + access;
     } else {
       axios.defaults.headers.common["Authorization"] = "";
     }

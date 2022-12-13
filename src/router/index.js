@@ -6,6 +6,7 @@ import Lists from "@/views/Lists";
 import Todo from "@/views/Todo";
 import NotFoundView from "../views/NotFound.vue";
 import ForgetPasswordView from "../views/ForgetPass.vue";
+import AddList from "@/views/AddList.vue";
 
 const routes = [
   {
@@ -42,6 +43,11 @@ const routes = [
     path: "/forgetpassword",
     name: "ForgetPassword",
     component: ForgetPasswordView,
+  },
+  {
+    path: "/add-list",
+    name: "AddList",
+    component: AddList,
   },
 ];
 

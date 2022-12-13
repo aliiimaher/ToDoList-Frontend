@@ -3,6 +3,8 @@
 </template>
 
 <script>
+import axios from "axios";
+
 export default {
   data() {
     return {
@@ -28,8 +30,21 @@ export default {
       this.items.push({
         label: "Quit",
         icon: "pi pi-fw pi-power-off",
+        command: () => this.logout(),
       });
     }
+  },
+  methods: {
+    logout() {
+      axios
+        .options("/logout/")
+        .then((response) => {
+          console.log(response);
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    },
   },
 };
 </script>

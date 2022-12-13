@@ -30,7 +30,7 @@ const routes = [
     component: Lists,
   },
   {
-    path: "/todos",
+    path: "/todos/:id",
     name: "todos",
     component: Todo,
   },
